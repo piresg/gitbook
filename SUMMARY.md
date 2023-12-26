@@ -10,4 +10,5 @@
 
 ## CRTP
 
+* [second](crtp/second.md)
 * [initial](crtp/initial.md)
