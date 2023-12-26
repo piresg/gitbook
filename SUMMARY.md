@@ -6,10 +6,9 @@
 
 ## Cortex XDR
 
-* [Active Directory](./cortex-xdr/activedirectory.md)
-* [Checkpoint](./cortex-xdr/checkpoint.md)
+* [Active Directory](cortex-xdr/active-directory.md)
+* [Checkpoint](cortex-xdr/checkpoint.md)
 * [Umbrella](cortex-xdr/umbrella.md)
-
 
 ## CRTP
 
