@@ -2,8 +2,7 @@
 
 ## PANOS
 
-* [🥔 OTHER](README.md)
-* [Page 2](<README (1).md>)
+* [🥔 Welcome](README.md)
 
 ## Cortex XDR
 
