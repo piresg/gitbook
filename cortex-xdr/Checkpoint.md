@@ -1,4 +1,4 @@
-# Checkpoint 
+# checkpoint 
 
 ![](./images/checkpoint1.png)
 
