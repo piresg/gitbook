@@ -1,5 +1,5 @@
 
-# Active Directory Events
+# Active Directory
 
 
 ![](/images/ad1.png)
