@@ -2,7 +2,7 @@
 
 ## CRTP
 
-* [Page 1](README.md)
+* [enum](README.md)
 
 ## PANOS
 
