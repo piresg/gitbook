@@ -6,7 +6,7 @@
 
 ## Cortex XDR
 
-
+* [Active Directory](./cortex-xdr/activedirectory.md)
 * [Umbrella](cortex-xdr/umbrella.md)
 
 
