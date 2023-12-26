@@ -1,13 +1,13 @@
 # Table of contents
 
-## CRTP
-
-* [enum](README.md)
-
 ## PANOS
 
-* [Page 2](panos/page-2.md)
+* [Page 2](README.md)
 
 ## Cortex XDR
 
 * [Active Directory](cortex-xdr/active-directory.md)
+
+## CRTP
+
+* [initial](crtp/initial.md)
