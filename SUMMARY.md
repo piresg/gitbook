@@ -10,4 +10,4 @@
 
 ## Cortex XDR
 
-* [Page 3](cortex-xdr/page-3.md)
+* [Active Directory](cortex-xdr/active-directory.md)
