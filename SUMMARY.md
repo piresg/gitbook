@@ -7,3 +7,9 @@
 ## Active Directory
 
 * [🛰 Enumeration](<Active Directory/enumeration.md>)
+
+
+## Cortex XDR
+
+### Dashboards
+* [🛰 Checkpoint](./CortexXDR/checkpoint.md)
