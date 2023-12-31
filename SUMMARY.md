@@ -9,5 +9,5 @@
 * [🛰 Enumeration](<Active Directory/enumeration.md>)
 
 
-## Cortex XDR
+## CortexXDR XQL 
 * [🛰 Checkpoint](./CortexXDR/checkpoint.md)
