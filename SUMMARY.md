@@ -2,9 +2,8 @@
 
 ## {in}secure.pt
 
-* [Hello world!](README.md)
+* [🛠 Hello world!](README.md)
 
 ## Active Directory
 
-* [Enumeration](./Active%20Directory/enumeration.md)
-
+* [🛰 Enumeration](<Active Directory/enumeration.md>)
