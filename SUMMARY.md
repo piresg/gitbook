@@ -8,6 +8,6 @@
 
 * [🛰 Enumeration](<Active Directory/enumeration.md>)
 
+## Cortex XDR XQL
 
-## Cortex XDR XQL 
-* [🛰 Checkpoint](./CortexXDR/checkpoint.md)
+* [🚩 Checkpoint](CortexXDR/checkpoint.md)
