@@ -1,6 +1,6 @@
 # Table of contents
 
-## {in}secure.pt
+## docs@{in}secure.pt
 
 * [🛠 Hello world!](README.md)
 
