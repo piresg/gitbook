@@ -2,7 +2,7 @@
 
 ## {in}secure.pt
 
-* [Welcome](README.md)
+* [Hello world!](README.md)
 
 ## Active Directory
 
