@@ -11,3 +11,7 @@
 ## Cortex XDR XQL
 
 * [🚩 Checkpoint](CortexXDR/checkpoint.md)
+
+## PAN OS 
+
+* [Prisma Acess](./PANOS/PrismaAccess.md)
