@@ -14,4 +14,4 @@
 
 ## PAN OS 
 
-* [Prisma Acess](./PANOS/PrismaAccess.md)
+* [Prisma Access](./PANOS/PrismaAccess.md)
