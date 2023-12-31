@@ -10,6 +10,4 @@
 
 
 ## Cortex XDR
-
-### Dashboards
 * [🛰 Checkpoint](./CortexXDR/checkpoint.md)
