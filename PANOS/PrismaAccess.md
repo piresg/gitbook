@@ -14,6 +14,12 @@
 
 ### Debug IPSec Tunnel on PAN OS
 
-``` debug ike tunnel PrismaAccess on debug ```
-```debug ike gateway IKEGW on debug  ```
-```tail follow yes mp-log ikemgr.log ```
+``` 
+debug ike tunnel PrismaAccess on debug 
+```
+```
+debug ike gateway IKEGW on debug  
+```
+```
+tail follow yes mp-log ikemgr.log 
+```
