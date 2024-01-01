@@ -1,5 +1,5 @@
 # Prisma Access
-## IPSec Tunel with Prisma Access
+## IPSec Tunnel with Prisma Access
 
 
 ### Create a remote network
@@ -8,5 +8,12 @@
 
 
 
-  oTpmYnMPan8vofNQwMpxLNkteAOU4fB0
+ 
   
+
+
+### Debug IPSec Tunnel on PAN OS
+
+``` debug ike tunnel PrismaAccess on debug ```
+```debug ike gateway IKEGW on debug  ```
+```tail follow yes mp-log ikemgr.log ```
