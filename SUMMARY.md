@@ -13,12 +13,12 @@
 ## Cortex XDR XQL
 
 
-* [🚩 Checkpoint](cortex-xdr-xql/checkpoint.md)
-* [🚩 Active Directory](cortex-xdr-xql/activedirectory.md)
-* [🚩 FirepowerNetOps](cortex-xdr-xql/firepowernetops.md)
-* [🚩 FirepowerSecOps](cortex-xdr-xql/firepowersecops.md)
-* [🚩 Squid](cortex-xdr-xql/squid.md)
-* [🚩 Umbrella](cortex-xdr-xql/umbrella.md)
+* [🚩 Checkpoint](./Cortex%20XDR/Checkpoint.md)
+* [🚩 Active Directory](./Cortex%20XDR/activedirectory.md)
+* [🚩 FirepowerNetOps](./Cortex%20XDR/firepowernetops.md)
+* [🚩 FirepowerSecOps](./Cortex%20XDR/firepowersecops.md)
+* [🚩 Squid](./Cortex%20XDR/squid.md)
+* [🚩 Umbrella](./Cortex%20XDR/umbrella.md)
 
 
 ## PAN OS
