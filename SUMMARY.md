@@ -13,12 +13,12 @@
 ## Cortex 
 
 
-* [🚩 Checkpoint](./Cortex%20XDR/checkpoint.md)
-* [🚩 Active Directory](./Cortex%20XDR/activedirectory.md)
-* [🚩 FirepowerNetOps](./Cortex%20XDR/firepowernetops.md)
-* [🚩 FirepowerSecOps](./Cortex%20XDR/firepowersecops.md)
-* [🚩 Squid](./Cortex%20XDR/squid.md)
-* [🚩 Umbrella](./Cortex%20XDR/umbrella.md)
+* [🚩 Checkpoint](./cortex/checkpoint.md)
+* [🚩 Active Directory](./cortex/ActiveDirectory.md)
+* [🚩 FirepowerNetOps](./cortex/FirepowerNetOps.md)
+* [🚩 FirepowerSecOps](./cortex/FirepowerSecOps.md)
+* [🚩 Squid](./cortex/Squid.md)
+* [🚩 Umbrella](./cortex/Umbrella.md)
 
 
 ## PAN OS
