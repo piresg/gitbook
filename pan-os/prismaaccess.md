@@ -4,7 +4,7 @@
 
 ### Create a remote network
 
-![](../.gitbook/assets/remotenetwork.png)
+![](<../.gitbook/assets/remotenetwork (1).png>)
 
 ### Debug IPSec Tunnel on PAN OS
 

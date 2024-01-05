@@ -1,9 +1,11 @@
-## Checkpoint 
+# 🚩 Checkpoint
 
-![](./images/checkpoint1.png)
+### Checkpoint
 
+![](../.gitbook/assets/checkpoint1.png)
 
-## Threats by origin country
+### Threats by origin country
+
 ```
 dataset = check_point_smartdefense_raw 
 | filter (cefSeverity = """Very-High""" and cs3 not in ("""anomaly""", """anomaly_dns""", """anomaly_http""")) 
@@ -12,7 +14,8 @@ dataset = check_point_smartdefense_raw
 | view graph type = map xaxis = loc_country yaxis = counter default_limit = `false` seriescolor("counter","#ff2100") seriestitle("counter","Origin countries") 
 ```
 
-## Threat Tactics
+### Threat Tactics
+
 ```
 dataset = check_point_smartdefense_raw 
 | filter (cefSeverity = """Very-High""" and cs3 not in ("""anomaly""", """anomaly_dns""", """anomaly_http""")) 
@@ -22,7 +25,7 @@ dataset = check_point_smartdefense_raw
 | view graph type = pie xaxis = cs4 yaxis = Number_of_Threats 
 ```
 
-## Threat Destination (Attack Surface)
+### Threat Destination (Attack Surface)
 
 ```
 dataset = check_point_smartdefense_raw 

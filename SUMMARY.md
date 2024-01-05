@@ -6,25 +6,20 @@
 
 ## Active Directory
 
-
 * [🛰 Enumeration](active-directory/enumeration.md)
-* [🛰 Atacks]
-* [🛰 LLMNR](./active-directory/ad_llmnr/index.md)
+* [\[🛰 Atacks\]](active-directory/atacks/README.md)
+  * [TESTE](active-directory/atacks/teste.md)
+* [🛰 LLMNR](active-directory/index.md)
 
+## Cortex
 
-
-## Cortex 
-
-
-* [🚩 Checkpoint](./cortex/checkpoint.md)
-* [🚩 Active Directory](./cortex/ActiveDirectory.md)
-* [🚩 FirepowerNetOps](./cortex/FirepowerNetOps.md)
-* [🚩 FirepowerSecOps](./cortex/FirepowerSecOps.md)
-* [🚩 Squid](./cortex/Squid.md)
-* [🚩 Umbrella](./cortex/Umbrella.md)
-
+* [🚩 Checkpoint](cortex/checkpoint.md)
+* [🚩 Active Directory](cortex/activedirectory.md)
+* [🚩 FirepowerNetOps](cortex/firepowernetops.md)
+* [🚩 FirepowerSecOps](cortex/firepowersecops.md)
+* [🚩 Squid](cortex/squid.md)
+* [🚩 Umbrella](cortex/umbrella.md)
 
 ## PAN OS
-
 
 * [Prisma Access](pan-os/prismaaccess.md)
