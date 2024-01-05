@@ -1,5 +1,4 @@
-
-## Example
+# Checkpoint 
 
 ![](./images/checkpoint1.png)
 
