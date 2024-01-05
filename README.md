@@ -1,3 +1,3 @@
-# {in}secure.pt
+# 🛠 Hello world!
 
 InfoSec tactics and techniques.

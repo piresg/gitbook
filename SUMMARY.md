@@ -6,17 +6,17 @@
 
 ## Active Directory
 
-* [🛰 Enumeration](<Active Directory/enumeration.md>)
+* [🛰 Enumeration](active-directory/enumeration.md)
 
 ## Cortex XDR XQL
 
-* [🚩 Checkpoint](./CortexXDR/Checkpoint.md)
-* [🚩 Active Directory](./CortexXDR/ActiveDirectory.md)
-* [🚩 FirepowerNetOps](./CortexXDR/FirepowerNetOps.md)
-* [🚩 FirepowerSecOps](./CortexXDR/FirepowerSecOps.md)
-* [🚩 Squid](./CortexXDR/Squid.md)
-* [🚩 Umbrella](./CortexXDR/Umbrella.md)
+* [🚩 Checkpoint](cortex-xdr-xql/checkpoint.md)
+* [🚩 Active Directory](cortex-xdr-xql/activedirectory.md)
+* [🚩 FirepowerNetOps](cortex-xdr-xql/firepowernetops.md)
+* [🚩 FirepowerSecOps](cortex-xdr-xql/firepowersecops.md)
+* [🚩 Squid](cortex-xdr-xql/squid.md)
+* [🚩 Umbrella](cortex-xdr-xql/umbrella.md)
 
-## PAN OS 
+## PAN OS
 
-* [Prisma Access](./PANOS/PrismaAccess.md)
+* [Prisma Access](pan-os/prismaaccess.md)
