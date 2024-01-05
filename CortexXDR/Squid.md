@@ -1,6 +1,6 @@
-# Squid Proxy 
+## Squid Proxy 
 
-![](/images/squid1.png)
+![](./images/squid1.png)
 
 
 
