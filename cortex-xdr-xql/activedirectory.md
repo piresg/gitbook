@@ -1,6 +1,9 @@
-# 🚩 Active Directory
 
-![](../images/ad1.png)
+# Active Directory Events
+
+
+![](/images/ad1.png)
+
 
 ## New Users
 
@@ -14,7 +17,7 @@ dataset = xdr_data // Using the xdr dataset
 
 ```
 
-### New Users Graph
+###  New Users Graph 
 
 ```
 dataset = xdr_data // Using the xdr dataset
@@ -32,7 +35,10 @@ dataset = xdr_data // Using the xdr dataset
 
 ```
 
-## Users Enabled
+
+
+
+##  Users Enabled
 
 ```
 dataset = xdr_data // Using the xdr dataset
@@ -45,7 +51,7 @@ dataset = xdr_data // Using the xdr dataset
 
 ```
 
-## Users Disabled
+##  Users Disabled
 
 ```
 dataset = xdr_data // Using the xdr dataset
@@ -54,6 +60,7 @@ dataset = xdr_data // Using the xdr dataset
 | fields  User_Name as Disabled_Account , Domain, Account_Creator as Who
 | sort desc _TIME 
 ```
+
 
 ## Locked User Accounts
 
@@ -78,7 +85,6 @@ filter actor_process_image_name = "consent.exe"
 ```
 
 ## Domain Group Changes
-
 ```
 dataset = xdr_data // Using the xdr dataset
  | filter event_type = ENUM.EVENT_LOG and action_evtlog_event_id in (4756)  

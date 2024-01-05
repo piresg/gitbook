@@ -1,9 +1,10 @@
-# 🚩 Umbrella
+# Umbrella 
 
-![](../.gitbook/assets/Umbrella1.png) ![](../.gitbook/assets/umbrela2.png)
+![](./images/Umbrella1.png)
+![](./images/umbrela2.png)
+
 
 ## Blocked Requests by Destination Country (Umbrella)
-
 ```
 dataset = amazon_aws_raw
 | alter ips = arrayindex(regextract(_raw_log , "^(?:[^\"]*\"){9}([^\"]+)"),0), status = arrayindex(regextract(_raw_log , "^(?:[^\"]*\"){11}([^\"]+)"),0)
@@ -15,7 +16,6 @@ dataset = amazon_aws_raw
 ```
 
 ## Blocked DNS by Source (Umbrella)
-
 ```
 dataset = amazon_aws_raw
 | alter users = arrayindex(regextract(_raw_log , "^(?:[^\"]*\"){5}([^\"]+)"),0), status = arrayindex(regextract(_raw_log , "^(?:[^\"]*\"){11}([^\"]+)"),0)

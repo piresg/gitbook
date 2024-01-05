@@ -1,9 +1,11 @@
-# 🚩 FirepowerSecOps
+# Firepower Sec Ops
 
-![](../.gitbook/assets/firepowersecops1.png) ![](../.gitbook/assets/firepowersecops2.png) ![](../.gitbook/assets/firepowersecops3.png)
+![](./images/firepowersecops1.png)
+![](./images/firepowersecops2.png)
+![](./images/firepowersecops3.png)
+
 
 ## Malicious Conections
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 != null
@@ -13,7 +15,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Malicious Conections by User
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 != null and suser  != "Unknown"
@@ -24,7 +25,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Malicious Conections by local IPs
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 != null 
@@ -40,7 +40,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## CnC connection attempts from local machines
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 = "CnC" 
@@ -53,7 +52,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Firepower IPS Events - Categories
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  !="CONNECTION STATISTICS" and cs5Label = "ipsPolicy"
@@ -64,7 +62,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Firepower IPS Alerts
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  !="CONNECTION STATISTICS" and cs5Label = "ipsPolicy"
@@ -75,7 +72,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Malicious DNS Requests
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 = "DNS Response" 
@@ -85,7 +81,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Cryptomining
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and cs5 contains "Cryptomining" 
@@ -94,7 +89,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top Files on the Network
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  !="CONNECTION STATISTICS" and fileType != null

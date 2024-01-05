@@ -1,9 +1,11 @@
-# 🚩 Squid
+## Squid Proxy 
 
-![](../images/squid1.png)
+
+![](./images/squid1.png)
+
+
 
 ## Total traffic
-
 ```
 dataset = unknown_unknown_raw
 | filter (_reporting_device_ip = """192.168.10.26""") 
@@ -14,6 +16,7 @@ dataset = unknown_unknown_raw
 | view graph type = single subtype = standard header = "GB" xaxis = total_traffic_GB yaxis = total_traffic_GB scale_threshold("#4fef01") headcolor = "#0ae204" 
 
 ```
+
 
 ## Geolocation
 
@@ -59,3 +62,5 @@ dataset = unknown_unknown_raw
 | view graph type = column subtype = grouped layout = horizontal xaxis = sourceip yaxis = total_traffic_GB 
 
 ```
+
+
