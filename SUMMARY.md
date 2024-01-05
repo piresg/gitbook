@@ -8,6 +8,9 @@
 
 
 * [🛰 Enumeration](active-directory/enumeration.md)
+* [🛰 Atacks]
+* [🛰 LLMNR](./active-directory/ad_llmnr/index.md)
+
 
 
 ## Cortex 
