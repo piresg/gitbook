@@ -6,21 +6,21 @@
 
 ## Active Directory
 
-* [🛰 Enumeration](active-directory/enumeration.md)
-* [Active Diretory Attacks]()
-  * [LLMNR](active-directory/index.md)
-  * [SMB Relay](./active-directory/ad_smbrelay/index.md)
-  * [MITM6](./active-directory/mitm6/index.md)
+* [Enumeration](active-directory/enumeration.md)
+* [Active Diretory Attacks](active-directory/active-diretory-attacks/README.md)
+  * [LLMNR](active-directory/active-diretory-attacks/index.md)
+  * [SMB Relay](active-directory/active-diretory-attacks/index-1.md)
+  * [MITM6](active-directory/active-diretory-attacks/index-2.md)
 
 ## Cortex
 
-* XDR Dashboards
-  * [Checkpoint](cortex/checkpoint.md)
-  * [Active Directory](cortex/activedirectory.md)
-  * [FirepowerNetOps](cortex/firepowernetops.md)
-  * [FirepowerSecOps](cortex/firepowersecops.md)
-  * [Squid](cortex/squid.md)
-  * [Umbrella](cortex/umbrella.md)
+* [XDR Dashboards](cortex/xdr-dashboards/README.md)
+  * [Checkpoint](cortex/xdr-dashboards/checkpoint.md)
+  * [Active Directory](cortex/xdr-dashboards/activedirectory.md)
+  * [FirepowerNetOps](cortex/xdr-dashboards/firepowernetops.md)
+  * [FirepowerSecOps](cortex/xdr-dashboards/firepowersecops.md)
+  * [Squid](cortex/xdr-dashboards/squid.md)
+  * [Umbrella](cortex/xdr-dashboards/umbrella.md)
 
 ## PAN OS
 

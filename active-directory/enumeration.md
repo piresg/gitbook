@@ -1,4 +1,4 @@
-# 🛰 Enumeration
+# Enumeration
 
 ## Enumeration
 
