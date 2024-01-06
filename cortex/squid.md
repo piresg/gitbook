@@ -1,11 +1,11 @@
-# 🚩 Squid
+## Squid Proxy 
 
-### Squid Proxy
 
-![](../.gitbook/assets/squid1.png)
+![](./images/squid1.png)
 
-### Total traffic
 
+
+## Total traffic
 ```
 dataset = unknown_unknown_raw
 | filter (_reporting_device_ip = """192.168.10.26""") 
@@ -17,7 +17,8 @@ dataset = unknown_unknown_raw
 
 ```
 
-### Geolocation
+
+## Geolocation
 
 ```
 dataset = unknown_unknown_raw
@@ -29,7 +30,7 @@ dataset = unknown_unknown_raw
 | view graph type = map xaxis = loc_country yaxis = counter default_limit = `false` seriescolor("counter","#e84830") seriestitle("counter","Hits") 
 ```
 
-### Destination Urls
+## Destination Urls
 
 ```
 dataset = unknown_unknown_raw
@@ -45,7 +46,7 @@ dataset = unknown_unknown_raw
 | view graph type = column subtype = grouped layout = horizontal xaxis = url yaxis = total_traffic_GB 
 ```
 
-### Top download IPs
+## Top download IPs
 
 ```
 dataset = unknown_unknown_raw
@@ -61,3 +62,5 @@ dataset = unknown_unknown_raw
 | view graph type = column subtype = grouped layout = horizontal xaxis = sourceip yaxis = total_traffic_GB 
 
 ```
+
+

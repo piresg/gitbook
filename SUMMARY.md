@@ -7,7 +7,7 @@
 ## Active Directory
 
 * [Enumeration](active-directory/enumeration.md)
-* [Active Diretory Attacks](active-directory/active-diretory-attacks/README.md)
+* [Active Directory Attacks](active-directory/active-diretory-attacks/README.md)
   * [LLMNR](active-directory/active-diretory-attacks/index.md)
   * [SMB Relay](active-directory/active-diretory-attacks/index-1.md)
   * [MITM6](active-directory/active-diretory-attacks/index-2.md)

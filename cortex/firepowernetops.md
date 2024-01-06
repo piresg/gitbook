@@ -1,9 +1,12 @@
-# 🚩 FirepowerNetOps
+# Firepower 
 
-![](../.gitbook/assets/firepower1.png) ![](../.gitbook/assets/firepower2.png) ![](../.gitbook/assets/firepower3.png) ![](../.gitbook/assets/firepower4.png)
+![](./images/firepower1.png)
+![](./images/firepower2.png)
+![](./images/firepower3.png)
+![](./images/firepower4.png)
+
 
 ## GB Sent and Received
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS"
@@ -15,7 +18,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top Apps by Traffic Volume
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS"
@@ -28,7 +30,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 10 Apps by Traffic Volume
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS"
@@ -42,7 +43,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 10 Apps by Session Count
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and app != "Unknown"
@@ -53,7 +53,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Actions
-
 ```
 dataset = cisco_firepower_raw 
 | fields act 
@@ -63,7 +62,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Geo Locations
-
 ```
 dataset = cisco_firepower_raw 
 | iploc  dst  loc_country
@@ -74,7 +72,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 10 Users by Traffic Volume
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and suser != "Unknown"
@@ -88,7 +85,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 10 Users by Download and Upload
-
 ```
 dataset = cisco_firepower_raw
 | filter cefName  ="CONNECTION STATISTICS" and suser != "Unknown"
@@ -101,7 +97,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 20 URLs
-
 ```
 dataset = cisco_firepower_raw 
 | filter  cefName  contains "CONNECTION STATISTICS" and request != null and request not contains "microsoft" and request not contains "office365.com" and request not contains "google.com" and request not contains "rovensa.com" and request not contains "office.com" and request not contains "windows.com"
@@ -112,7 +107,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Top 20 Domains
-
 ```
 dataset = cisco_firepower_raw 
 | filter  cefName  contains "CONNECTION STATISTICS" and destinationDnsDomain  != null and destinationDnsDomain  not contains "microsoft" and destinationDnsDomain  not contains "opendns.com" and destinationDnsDomain  not contains "office365.com" and destinationDnsDomain  not contains "sapecgroup.com" and destinationDnsDomain  not contains "umbrella.com" and destinationDnsDomain  not contains "office.com" and destinationDnsDomain  not contains ".local"
@@ -123,7 +117,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## Zones
-
 ```
 dataset = cisco_firepower_raw 
 | comp count(_id) as sessions by cs3, cs4 
@@ -134,7 +127,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## From Zone
-
 ```
 dataset = cisco_firepower_raw 
 | filter (cefName = "CONNECTION STATISTICS") 
@@ -145,7 +137,6 @@ dataset = cisco_firepower_raw
 ```
 
 ## To Zone
-
 ```
 dataset = cisco_firepower_raw 
 | filter (cefName = "CONNECTION STATISTICS") 
