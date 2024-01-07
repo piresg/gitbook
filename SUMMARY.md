@@ -25,3 +25,4 @@
 ## PAN OS
 
 * [Prisma Access](pan-os/prismaaccess.md)
+* [Data Redistribution](./pan-os/dataredistibution.md)
