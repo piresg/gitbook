@@ -7,10 +7,10 @@
 ## Active Directory
 
 
-* [Active Directory Attacks](active-directory/active-diretory-attacks/README.md)
-  * [LLMNR](active-directory/active-diretory-attacks/index.md)
-  * [SMB Relay](active-directory/active-diretory-attacks/index-1.md)
-  * [MITM6](active-directory/active-diretory-attacks/index-2.md)
+* [Active Directory Attacks]()
+  * [LLMNR](./active-directory/llmnr.md)
+  * [SMB Relay](./active-directory/smbrelay.md)
+  * [MITM6](./active-directory/mitm6.md)
 
 ## Cortex
 

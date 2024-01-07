@@ -1,16 +1,6 @@
----
-title: LLMNR Poisoning
-draft: false
-tags:
-  - Active Directory
-  - Poisoning & Spoofing
-  - NTLMV2
-  - MITM
----
 
-# LLMNR
 
-### Definição
+## Definição
 
 **LLMNR** é um acrónimo de _Link-Local Multicast Resolution_, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 
@@ -20,7 +10,7 @@ A vulnerabilidade deste serviço existe na resposta, sendo enviado o utilizador 
 
 É um ataque do tipo **Man in the Middle (MITM)**, em que o atacante responde ao pedido e guarda informação de acesso do utilizador.
 
-![](../ad\_llmnr/LLMNR.drawio.jpg#center)
+![](LLMNR.drawio.jpg#center)
 
 1. O utilizador pretende aceder a uma pasta de rede inexistente com o nome \\\ZEMANEL;
 2. O DNS falha em responder porque não conhece o recurso;
@@ -30,49 +20,50 @@ A vulnerabilidade deste serviço existe na resposta, sendo enviado o utilizador 
 
 Desta forma o atacante fica com a possibilidade de extrair a _password_ do _hash_ que recebeu para se autenticar, iniciando assim o primeiro passo para acesso ao dominio.
 
-### Exploração (PoC)
+## Exploração (PoC)
 
-* Iniciar o _responder_
+- Iniciar o _responder_
 
 ```Bash
 sudo responder -I eth0 -wd
 ```
 
-![](../../.gitbook/assets/responder.png)
+![](responder.png)
 
-* o utilizador tenta aceder a uma pasta de rede que não existe.
+- o utilizador tenta aceder a uma pasta de rede que não existe.
 
-![](../../.gitbook/assets/acessoshared.png)
+![](acessoshared.png)
 
-* O _responder_ indica ao utilizador jcid dizendo que é ele o destino e é enviado o _user_ e a _hash_ da _password_
+- O _responder_ indica ao utilizador jcid dizendo que é ele o destino e é enviado o _user_ e a _hash_ da _password_
 
-![](../../.gitbook/assets/responderwithhash.png)
+![](responderwithhash.png)
 
-* Copiamos a hash para um ficheiro e iniciamos o processo de extração da _password_ a partir da _hash_.
+- Copiamos a hash para um ficheiro e iniciamos o processo de extração da _password_ a partir da _hash_.
 
-![](../../.gitbook/assets/hash.png)
+![](hash.png)
 
-* Iremos utilizar a ferramenta _**hashcat**_ para o efeito, existem outras opções como o **John the ripper**
-* O tipo de _hash_ é NTLMV2
+- Iremos utilizar a ferramenta **_hashcat_** para o efeito, existem outras opções como o **John the ripper**
 
-![](../../.gitbook/assets/hashcat\_ntml.png)
+- O tipo de _hash_ é NTLMV2
 
-* ```bash
+![](hashcat_ntml.png)
+
+- ```bash
 
     hashcat -m 5600 jcid.hash /usr/share/wordlists/rockyou.txt
 
   ```
 
-![](../../.gitbook/assets/hashcatfinal.png)
+![](hashcatfinal.png)
 
 E a partir deste momento já conhecemos o user/dominio assim como a password do utilizador, neste ponto podemos iniciar a exploração da Active Directory, visto que já temos credenciais validas.
 
-### Informação adicional
+## Informação adicional
 
 Este tipo de ataque é muito eficaz logo pelo manhã quando os utilizadores chegam ao local de trabalho e depois de almoço. Visto que nessa altura é quando estes começam a aceder a drives partilhadas e/ou a outros serviços.
 
-### Mitigação
+## Mitigação
 
-* Em _"Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client_ colocar _**"Turn OFF Multicast Name Resolution"**_ como _**enable**_.
+- Em _"Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client_ colocar **_"Turn OFF Multicast Name Resolution"_** como **_enable_**.
 
-![](../ad\_llmnr/miti.png#center)
+![](miti.png#center)
