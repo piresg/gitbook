@@ -1,9 +1,7 @@
-
-
-
 ## Create Service Account
 
 **DO NOT SKIP THIS**
+
 We must start to create a service account by following the official [documentation](https://docs.paloaltonetworks.com/pan-os/11-0/pan-os-admin/user-id/map-ip-addresses-to-users/create-a-dedicated-service-account-for-the-user-id-agent). 
 
 
