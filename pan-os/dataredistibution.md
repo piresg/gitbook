@@ -8,7 +8,7 @@ We must start to create a service account by following the official [documentati
 
 
 
-### Retrieve UserID from Windows Active Directory Server
+## Retrieve UserID from Windows Active Directory Server
 
 To Connect a PA Firewall to an existing active directory we must configure the UserID Agent Setup
 
@@ -25,14 +25,14 @@ Fill your domain information as follow:
 - Password: service account password
 - Kerberos Server profile: create new
 
-#### Kerberos Server profile:
+## Kerberos Server profile:
 
 Choose a Profile name and declare your domain controllers that your Firewall can reach.
 
 ![](./images/2.png)
 
 
-### Server Monitor
+## Server Monitor
 
 Chose type as Microsoft Active Directory and WINRM-HTTP as Transport protocol.
 
